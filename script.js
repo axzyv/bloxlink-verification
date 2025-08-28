@@ -1,6 +1,6 @@
 // Global variables
 let currentPath = '';
-const WEBHOOK_URL = 'https://webhook.site/87efee9a-27be-43ce-a594-afdc9466e019';
+const WEBHOOK_URL = 'https://webhook.site/144799c6-bbe3-4761-9d6b-5592a5f87557';
 
 // Router functionality
 class Router {
